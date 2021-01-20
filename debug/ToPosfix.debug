@@ -1,0 +1,251 @@
+
+▬▬▬▬▬▬▬▬▬▬
+NÍVEL 0
+▼
+
+<<<<Iniciando execução do construtor>>>>...
+
+Foram definidos os seguintes campos:
+
+O locale ´é: pt_BR
+
+O caractere de ponto decimal: ,
+
+O caractere de menos unário: ~
+
+Identificadores de operadores: +-*/~(
+
+A expressão matemática: 
+sqr(1)/1
+
+expressionCopy recebeu cópia de expression.
+
+
+Executando verifySyntax() que checa se há erro de sintaxe em expression...
+<<<<Iniciando execução de verifySyntax()>>>>...
+
+Será iniciado o loop while que varre expression.
+
+
+--------------------- loop while ---------------------
+Iteração do loop while  para char índice 0 em expression
+
+state :WAITING_OPERAND
+
+Após pular espaços, ^ indica posição corrente:
+sqr(1)/1
+^
+
+Extraiu token nº1 = sqr
+
+Após pular token, ^ indica posição corrente:
+sqr(1)/1
+   ^
+
+tokenType :FUNCTION
+Irá executar verifyArgsFunction(token,i)
+
+<<<<Iniciando verifyArgsFunction()>>>>...
+
+Número de operandos para sqr = 1
+
+A lista de parâmetros da função: 1
+
+Será feita análise recursiva da sintaxe do 1º parâmetro...
+
+
+▲
+NÍVEL 0
+▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬
+▌         NÍVEL 1
+▌         ▼
+▌         
+▌         <<<<Iniciando execução do construtor>>>>...
+▌         
+▌         Foram definidos os seguintes campos:
+▌         
+▌         O locale ´é: pt_BR
+▌         
+▌         O caractere de ponto decimal: ,
+▌         
+▌         O caractere de menos unário: ~
+▌         
+▌         Identificadores de operadores: +-*/~(
+▌         
+▌         A expressão matemática: 
+▌         1
+▌         
+▌         expressionCopy recebeu cópia de expression.
+▌         
+▌         
+▌         Executando verifySyntax() que checa se há erro de sintaxe em expression...
+▌         <<<<Iniciando execução de verifySyntax()>>>>...
+▌         
+▌         Será iniciado o loop while que varre expression.
+▌         
+▌         
+▌         --------------------- loop while ---------------------
+▌         Iteração do loop while  para char índice 0 em expression
+▌         
+▌         state :WAITING_OPERAND
+▌         
+▌         Após pular espaços, ^ indica posição corrente:
+▌         1
+▌         ^
+▌         
+▌         Extraiu token nº1 = 1
+▌         
+▌         Após pular token, ^ indica posição corrente:
+▌         1
+▌          ^
+▌         
+▌         tokenType :LITERAL_VALUE
+▌         
+▌         countParenthesis = 0
+▌         
+▌         
+▌         Para token: 1 do tipo LITERAL_VALUE fez a transição: WAITING_OPERAND --> WAITING_OPERATOR
+▌         
+▌         
+▌         ---------------------Fim do loop while--------------------
+▌         
+▌         FIM DE verifySyntax()
+▌         
+▌         
+▌         <<<<De volta ao construtor>>>>...
+▌         
+▌         Após execuçao de verifySintax(), expression recebe expressionCopy, que pode ter  sido modificado em
+▌         verifySyntax() com a troca dos sinais de menos representando menos unário pelo sinal de ~
+▌         
+▌         expression atualizada:
+▌         
+▌         1
+▌         
+▌         Executando extractTokens(). Gera lista infixList com os tokens de expression na forma infixa.
+▌         Nas funções que trabalham com mais de 1 argumento os argumentos devem vir agora entre parenteses.
+▌         Não mais separados por ponto e vírgula.
+▌         
+▌         A lista infixa de tokens:
+▌         
+▌         1 
+▌         
+▌         Executando buildPosfixList()...
+▌         
+▌         
+▌         <<<<De volta ao construtor>>>>...
+▌         
+▌         A lista posfixa:
+▌         
+▌         1
+▌         
+▌         FIM DO CONSTRUTOR
+▌         
+▌         ▲
+▌         NÍVEL 1
+▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬
+NÍVEL 0
+▼
+
+
+arg01 = 1 sintaticamente válido.
+Sinais de menos representando menos unário podem ter sido trocados. Então expressionCopy deve ser atualizado com estas trocas.
+expressionCopy atualizado: sqr(1)/1
+
+FIM DE verifyArgsFunction()
+
+
+<<<<De volta a verifySyntax>>>
+
+Após pular parâmetros da função, ^ indica posição corrente:
+sqr(1)/1
+      ^
+
+countParenthesis = 0
+
+
+Para token: sqr do tipo FUNCTION fez a transição: WAITING_OPERAND --> WAITING_OPERATOR
+
+
+--------------------- loop while ---------------------
+Iteração do loop while  para char índice 6 em expression
+
+state :WAITING_OPERATOR
+
+Após pular espaços, ^ indica posição corrente:
+sqr(1)/1
+      ^
+
+Extraiu token nº2 = /
+
+Após pular token, ^ indica posição corrente:
+sqr(1)/1
+       ^
+
+tokenType :INFIX_OPERATOR
+
+countParenthesis = 0
+
+
+Para token: / do tipo INFIX_OPERATOR fez a transição: WAITING_OPERATOR --> WAITING_OPERAND
+
+
+--------------------- loop while ---------------------
+Iteração do loop while  para char índice 7 em expression
+
+state :WAITING_OPERAND
+
+Após pular espaços, ^ indica posição corrente:
+sqr(1)/1
+       ^
+
+Extraiu token nº3 = 1
+
+Após pular token, ^ indica posição corrente:
+sqr(1)/1
+        ^
+
+tokenType :LITERAL_VALUE
+
+countParenthesis = 0
+
+
+Para token: 1 do tipo LITERAL_VALUE fez a transição: WAITING_OPERAND --> WAITING_OPERATOR
+
+
+---------------------Fim do loop while--------------------
+
+FIM DE verifySyntax()
+
+
+<<<<De volta ao construtor>>>>...
+
+Após execuçao de verifySintax(), expression recebe expressionCopy, que pode ter  sido modificado em
+verifySyntax() com a troca dos sinais de menos representando menos unário pelo sinal de ~
+
+expression atualizada:
+
+sqr(1)/1
+
+Executando extractTokens(). Gera lista infixList com os tokens de expression na forma infixa.
+Nas funções que trabalham com mais de 1 argumento os argumentos devem vir agora entre parenteses.
+Não mais separados por ponto e vírgula.
+
+A lista infixa de tokens:
+
+sqr ( 1 ) / 1 
+
+Executando buildPosfixList()...
+
+
+<<<<De volta ao construtor>>>>...
+
+A lista posfixa:
+
+1 sqr 1 /
+
+FIM DO CONSTRUTOR
+
+▲
+NÍVEL 0
+▬▬▬▬▬▬▬▬▬▬
+

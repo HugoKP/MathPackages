@@ -1,0 +1,35 @@
+\babel@toc {brazilian}{}
+\contentsline {chapter}{Objetivo do Projeto}{4}% 
+\contentsline {part}{Pacote classes.math}{5}% 
+\contentsline {paragraph}{br.com.hkp.classes.math}{5}% 
+\contentsline {chapter}{Classe XMath}{6}% 
+\contentsline {paragraph}{XMath}{6}% 
+\contentsline {section}{XMath()}{7}% 
+\contentsline {section}{frac()}{7}% 
+\contentsline {section}{frac()}{7}% 
+\contentsline {section}{integ()}{7}% 
+\contentsline {section}{nPr()}{8}% 
+\contentsline {section}{nCPr()}{8}% 
+\contentsline {section}{nPr()}{9}% 
+\contentsline {section}{nCPr()}{13}% 
+\contentsline {section}{nCr()}{19}% 
+\contentsline {section}{sum()}{20}% 
+\contentsline {section}{sum()}{20}% 
+\contentsline {section}{sum()}{21}% 
+\contentsline {section}{primeFactors()}{21}% 
+\contentsline {section}{primeFactors()}{23}% 
+\contentsline {section}{allFactors()}{24}% 
+\contentsline {part}{Pacote classes.math.numberstheory}{26}% 
+\contentsline {paragraph}{br.com.hkp.classes.math.numberstheory}{26}% 
+\contentsline {chapter}{Classe QuickSieve}{27}% 
+\contentsline {paragraph}{QuickSieve}{27}% 
+\contentsline {section}{QuickSieve()}{30}% 
+\contentsline {section}{getPrimes()}{30}% 
+\contentsline {chapter}{Classe ExtensibleSieve}{35}% 
+\contentsline {paragraph}{ExtensibleSieve}{35}% 
+\contentsline {section}{appendList()}{37}% 
+\contentsline {part}{Pacote classes.math.strings}{41}% 
+\contentsline {paragraph}{br.com.hkp.classes.math.strings}{41}% 
+\contentsline {chapter}{Classe ToPosfix}{42}% 
+\contentsline {paragraph}{ToPosfix}{42}% 
+\contentsline {section}{verifySyntax()}{43}% 
